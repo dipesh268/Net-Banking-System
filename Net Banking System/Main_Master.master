@@ -1,0 +1,108 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="Main_Master.master.cs" Inherits="Main_Master" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+      <style type="text/css">
+        *{
+    padding:0;
+    margin:0;
+    text-decoration:none;
+    list-style:none;
+    box-sizing:border-box;
+    
+}
+html{
+    height:100%;
+}
+body{
+   background-image:linear-gradient(#f1f1f4,#e3e4e8,#d5d6dd,#f1f1f4);
+    width:100%;
+    height: 323px;
+}
+.nav1{
+    background-color:#2f323a;
+    height:50px;
+    width:100%;
+    border-bottom:2px solid black;
+border-top:2px solid black;
+border-shadow:0 2px solid black;
+}
+img{
+
+}
+.nav1 ul{
+    float:right;
+    margin-right:20px;
+}
+.nav1 ul li{
+    display:inline-block;
+    line-height:45px;
+    margin:0 15px;
+   
+}
+ .nav1 ul li a{
+     color:white;
+     font-size:12px;
+     text-transform:uppercase;
+     z-index:2;
+ }
+ .nav1 ul li a:hover{
+     background-color:floralwhite;
+     border-radius:12px;
+     color:black;
+     padding:6px;
+     width:6px;
+     transition-duration:0.3s;
+     
+ }
+ .div1
+ {
+     
+     }
+ @keyframes shake {
+  0% { transform: translate(1px, 1px) rotate(0deg); }
+  10% { transform: translate(-1px, -2px) rotate(-1deg); }
+  20% { transform: translate(-3px, 0px) rotate(1deg); }
+  30% { transform: translate(3px, 2px) rotate(0deg); }
+  40% { transform: translate(1px, -1px) rotate(1deg); }
+  50% { transform: translate(-1px, 2px) rotate(-1deg); }
+  60% { transform: translate(-3px, 1px) rotate(0deg); }
+  70% { transform: translate(3px, 1px) rotate(-1deg); }
+  80% { transform: translate(-1px, -1px) rotate(1deg); }
+  90% { transform: translate(1px, 2px) rotate(0deg); }
+  100% { transform: translate(1px, -2px) rotate(-1deg); }
+}
+    </style>
+</head>
+<body>
+    <form id="form1" runat="server">
+     <div class="nav1">
+    <a href="Welcome.aspx"><img src="image/final_bar_logo.png" style="height: 52px; width: 188px"></a>
+    <ul>
+        <li><a href="Welcome.aspx">
+            Home</a>
+        </li>
+        <li><a href="Services.aspx">
+            Serives</a>
+        </li>
+        <li><a href="Contact.aspx">
+            Contact</a>
+        </li>
+        <li><a href="Help.aspx">
+             Help</a>
+        </li>
+     </ul>
+</div>
+    <div>
+        <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+        
+        </asp:ContentPlaceHolder>
+    </div>
+    </form>
+</body>
+</html>

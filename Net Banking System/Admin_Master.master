@@ -1,0 +1,284 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="Admin_Master.master.cs" Inherits="Admin_Master" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+      <style type="text/css">
+        *{
+        padding:0;
+        margin:0;
+        text-decoration:none;
+        list-style:none;
+        box-sizing:border-box;
+    }
+    html{
+        height:100%;
+    }
+    body
+    {
+        overflow:hidden;
+     background-color:white;
+        
+        width:100%;
+        height: 1192px;
+    }
+    .nav1{
+        background-color:#2f323a;
+        height:50px;
+        margin-left:0px;
+         width: calc(100%);
+    }
+  
+    
+     
+  .nav1 ul1{
+        float:right;
+        margin-right:20px;
+    }
+    .nav1 ul1 li{
+        display:inline-block;
+        line-height:45px;
+        margin:0 15px;
+   
+    }
+     .nav1 ul1 li a{
+         color:white;
+         font-size:15px;
+         text-transform:uppercase;
+         z-index:2;
+     }
+     .nav1 ul1 li a:hover{
+         background-color:floralwhite;
+         border-radius:12px;
+         color:black;
+         padding:6px;
+         width:6px;
+         transition-duration:0.3s;
+     
+     }
+   .nav1 .logo
+     {
+          display:inline-block;
+         margin-left:41px;
+          line-height:45px;
+           
+     }
+         
+     
+     
+  
+
+          
+    .con
+    {
+       
+            margin-left:210px;
+            margin-right:0px;
+           
+             
+           
+        }
+       
+      
+       .sidebar {
+          background: #2f323a;
+          margin-top: 0px;
+          padding-top: 30px;
+          position: fixed;
+          left: 0;
+          width: 210px;
+          height:700px;
+          transition: 0.5s;
+          transition-property: left;
+        }
+
+        
+     
+
+        .sidebar a
+        {
+            font-size:13pt;
+              color: #fff;
+              display: block;
+              width: 100%;
+              line-height: 60px;
+              text-decoration: none;
+              padding-left: 30px;
+              box-sizing: border-box;
+              transition: 0.5s;
+              transition-property: background;
+        }
+
+        .sidebar a:hover{
+          background: #19B3D3;
+        }
+
+        .sidebar i{
+          margin-right:-10px;
+        }
+
+        label #sidebar_btn{
+          z-index: 1;
+          color: #fff;
+          position: fixed;
+          cursor: pointer;
+          left: 300px;
+          font-size: 20px;
+          margin: 5px 0;
+          transition: 0.5s;
+          transition-property: color;
+        }
+        
+        
+           .profile1
+                {
+                   
+                    margin-left:5px;
+                   margin-top:-20px;
+                    width:200px;
+                    height:120px;
+                    padding-top:7px;
+                    padding-left:5px;
+                   background-color:#2B4D75; 
+                  border-radius:5px;
+                }
+                .image1
+                {
+                    margin-left:15px;
+                    width:60px;
+                    height:55px;
+                    border-radius:5px;
+                    position:absolute;
+                    top: 20px;
+                    left: -5px;
+                }
+                .image1 .img1
+                {
+                    width:80px;
+                    height:100px; 
+                     border-radius:5px;
+                }
+                .profile1 .profileinfo1
+                {
+                    
+                    margin-left:90px;
+                    width:120px;
+                    height:50px;
+                    padding-top:25px;
+                }
+       
+              .con .footer
+               {
+                  position:fixed;
+                   background-color:#E5E5E5;
+                   width:1280px;
+                   height:60px;
+                  
+                   bottom:0px;
+                   padding-top:25px;
+               }
+               .footer h5
+               {
+                   position:absolute;
+                   font-size:11pt;
+                   font-weight:50;
+                   margin-left:30px;
+               }
+               .footer .condition
+               {
+                   font-size:12pt;
+                   margin-left:1010px;
+               }
+               
+ @keyframes shake {
+  0% { transform: translate(1px, 1px) rotate(0deg); }
+  10% { transform: translate(-1px, -2px) rotate(-1deg); }
+  20% { transform: translate(-3px, 0px) rotate(1deg); }
+  30% { transform: translate(3px, 2px) rotate(0deg); }
+  40% { transform: translate(1px, -1px) rotate(1deg); }
+  50% { transform: translate(-1px, 2px) rotate(-1deg); }
+  60% { transform: translate(-3px, 1px) rotate(0deg); }
+  70% { transform: translate(3px, 1px) rotate(-1deg); }
+  80% { transform: translate(-1px, -1px) rotate(1deg); }
+  90% { transform: translate(1px, 2px) rotate(0deg); }
+  100% { transform: translate(1px, -2px) rotate(-1deg); }
+}
+    </style>
+</head>
+<body>
+    <form id="form1" runat="server">
+   <div class="main">
+
+    
+       
+        
+   
+       <div class="nav1">
+      
+       <a href="Welcome.aspx"><img src="image/final_bar_logo.png" style="height: 52px; width: 188px"></a>
+
+     
+          <%--  <ul>
+            <li>
+             Welcome,<asp:Label ID="Label1" runat="server" Text="Label"></asp:Label>
+            </li>
+            </ul>--%>
+              &nbsp;<ul1>
+            <li><a href="Login.aspx">
+                 Logout</a>
+            </li>
+         </ul1>
+       
+      
+                
+                
+                </div>
+                  <div class="sidebar">
+                   <div class="profile1">
+        <div class="image1">
+            <asp:Image ID="Image1" runat="server" CssClass="img1" 
+                ImageUrl="~/image/c.jpg" />
+        </div>
+         <div class="profileinfo1">
+        <asp:Label ID="Label2" runat="server" Text="Welcome, <br> &nbsp;&nbsp; nar01" 
+        Font-Size="13pt" ForeColor="White"  style="margin-left:10px" CssClass="lbl1"
+        Font-Bold="True" ></asp:Label><br /><br />
+        <asp:Label ID="Label8" runat="server" Text="Onilne"
+        Font-Size="13pt" ForeColor="LimeGreen"  style="margin-left:10px" 
+        Font-Bold="False" ></asp:Label>
+        <asp:Label ID="Label9" runat="server" Text="Label" Visible="false"></asp:Label>
+             <asp:Label ID="Label10" runat="server" Text="Label" Visible="false"></asp:Label>
+        </div>
+        </div>
+            <br />      
+    <%--  <center>
+        <img src="image/pro.jpg" class="profile_image" alt="">
+        <h4>User</h4>
+      </center>--%>
+      <a href="Admin_Home.aspx"><span> Home</span></a>
+      <a href="Admin_User-dtl.aspx"><span> User Details</span></a>
+      <a href="Admin_dtl-account.aspx" ><span> Account Detail</span></a>
+      <a href="Admin_Add-user.aspx"><span> Add User</span></a>
+      <a href="Admin_Transaction-Report.aspx"><span> Transaction Detail</span></a>
+      <a href="Admin_add-money.aspx"><span> Add Money to User</span></a>
+      <a href="Admin_Request.aspx"><span> Request</span></a>
+    </div>
+    
+
+    <div class = "con">
+       <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+        
+        </asp:ContentPlaceHolder>
+         
+    </div>
+
+   
+   </div>
+    </form>
+</body>
+</html>
